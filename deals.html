@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>基于ResNet和Bert的无障碍地图平台</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="app">
+                      <p class="biao">基于ResNet和Bert的无障碍地图平台</p>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">社区</a></li>
+                        <li><a href="deals.html" class="active">爱心接单</a></li>
+                        <li><a href="reservation.html">个人</a></li> 
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>选择您的帮扶对象</h4>
+          <h2>爱从这里开始</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="search-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-2">
+                <h4>爱心之旅：</h4>
+              </div>
+              <div class="col-lg-4">
+                  <fieldset>
+                      <select name="Location" class="form-select" aria-label="Default select example" id="chooseLocation" onChange="this.form.click()">
+                          <option selected>地点</option>
+                          <option type="checkbox" name="option1" value="Italy">家庭附近</option>
+                          <option value="France">公司附近</option>
+                          <option value="Switzerland">学校附近</option>
+                          <option value="Thailand">商场附近</option>
+                          <option value="Australia">其他</option>
+                      </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-4">
+                  <fieldset>
+                      <select name="Price" class="form-select" aria-label="Default select example" id="choosePrice" onChange="this.form.click()">
+                          <option selected>时间</option>
+                          <option value="100">今日12：00后</option>
+                          <option value="250">今日12：00前</option>
+                          <option value="500">昨天12：00后</option>
+                          <option value="1000">昨天12：00前</option>
+                      </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-2">                        
+                  <fieldset>
+                      <button class="border-button">查询</button>
+                  </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="amazing-deals">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image">
+                  <img src="assets/images/deals-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div class="content">
+                  <h4>无障碍电梯</h4>
+                  <!--
+                  <div class="row">
+                    <div class="col-6">
+                      <i class="fa fa-clock"></i>
+                      <span class="list">5 Days</span>
+                    </div>
+                    <div class="col-6">
+                      <i class="fa fa-map"></i>
+                      <span class="list">Daily Places</span>
+                    </div>
+                  </div>
+                  -->
+                  <p>
+                    时间：今日15：00<br>
+                    地点：嵩山路66号百货超市1楼<br>
+                    事件：将坐着轮椅的老人通过电梯安全送到5楼<br>
+                    注意事项：无<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image">
+                  <img src="assets/images/deals-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div class="content">
+                  <h4>无障碍电梯</h4>
+                  <p>
+                    时间：今日10：00<br>
+                    地点：黄河路与便民路交叉口向东100米<br>
+                    事件：帮残疾人把他从9楼带到楼下<Br>
+                    注意事项：无<br>
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image">
+                  <img src="assets/images/deals-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div class="content"> 
+                  <h4>无障碍坡道</h4>
+                  <p>
+                    时间：昨日13：00<br>
+                    地点：经海路向东800米<br>
+                    事件：帮助老人下坡<br>
+                    注意事项：老人耳朵听不清，交流要大声<br>
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image">
+                  <img src="assets/images/deals-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center">
+                <div class="content">
+                  <h4>无障碍坡道</h4>
+                  <p>
+                    时间：明天日15：00<br>
+                    地点：嵩山路66号百货超市1楼<br>
+                    事件：帮助老人下坡<br>
+                    注意事项：无<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="best-locations">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading text-center">
+                  <h2>需要帮助</h2>
+                  <p>在这里您可以拍照上传一些自己的问题，以此获得帮助</p>
+                </div>
+              </div>
+              <div class="text2">
+                <div class="line-dec">
+                  <ul>
+                    <li>时间：
+                      <select id="status_select" οnchange="optionChange()">
+                        <option >未选择</option>
+                        <option >今日12：00后</option>
+                        <option >今日12：00前</option>
+                        <option >昨天12：00后</option>
+                        <option>昨天12：00前</option>
+                      </select>
+                  </li>
+                  <li>地点：
+                    <input type='text' class="in">
+                  </li>
+                  <li>事件：
+                    <select id="status_select" οnchange="optionChange()">
+                      <option>未选择</option>
+                      <option>无障碍电梯</option>
+                      <option>无障碍厕所</option>
+                      <option>无障碍坡道</option>
+                    </select>
+                  </li>
+                  <li>具体问题：
+                    <input type='text' class="in">
+                  </li>
+                </ul>
+                <div class="main-button">
+                 <!-- <input type="button" onclick="javascript:location.reload();" value="刷新当前页面">-->
+                 <button onclick="shenhe()" id="shen">点击提交</button>
+                </div>
+                </div>
+              </div>
+              <div id="imgPreview">
+                <div id="prompt3">
+                    <span id="imgSpan">
+                     点击上传
+                    </span>
+                    <input type="file" id="file" class="filepath" onchange="changepic(this)" accept="image/jpg,image/jpeg,image/png,image/PNG">
+                <!--当vaule值改变时执行changepic函数，规定上传的文件只能是图片-->    
+                </div>
+                <img src="#" id="img3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+           <a href="#" class="zi">爱心</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(".option").click(function(){
+      $(".option").removeClass("active");
+      $(this).addClass("active"); 
+    });
+  </script>
+<script type="text/javascript">
+  function changepic() {
+$("#prompt3").css("display", "none");
+var reads = new FileReader();
+f = document.getElementById('file').files[0];
+reads.readAsDataURL(f);
+reads.onload = function(e) {
+document.getElementById('img3').src = this.result;
+$("#img3").css("display", "block");
+};
+}
+</script>
+<script>
+ function shenhe(){
+   var obj=document.getElementById("shen");
+   obj.innerHTML="待审核";
+ }
+</script>
+  </body>
+
+</html>
